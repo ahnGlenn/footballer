@@ -1,6 +1,7 @@
 import React from 'react';
 import "./Login.css";
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 
 const LoginPage = (props) => {
     return(
@@ -14,25 +15,25 @@ const LoginPage = (props) => {
                     </div>
                     <div class="login_id">
                         <h4>E-mail</h4>
-                        <input type="email" name="" id="" placeholder="email" />
+                        <input type="email" name="" id="" placeholder="email" maxlength="30"/>
                     </div>
                     <div class="login_pw">
                         <h4>Password</h4>
-                        <input type="password" name="" id="" placeholder="Password" />
+                        <input type="password" name="" id="" placeholder="Password" maxlength="30"/>
                     </div>
                     <div class="login_etc">
                         <div class="checkbox">
-                        <input type="checkbox" name="" id="" /> Remember Me?
+                            <input type="checkbox" name="" id="" /> Remember Me?
                         </div>
                         <div class="forgot_pw">
-                        <a href="">Forgot Password?</a>
-                    </div>
+                            <a href="">Forgot Password?</a>
+                        </div>
                     </div>
                     <div class="submit">
                         <input type="submit" value="Login" />
                     </div>
-                    <div class="">
-                        <input type="submit" value="register now" />
+                    <div class="regist">
+                        <button><Link to="/RegisterPage">Sign-in</Link></button>
                     </div>
                 </div>
             </div>
