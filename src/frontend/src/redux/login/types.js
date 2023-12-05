@@ -1,2 +1,7 @@
-export const LOGIN = 'LOGIN'
-export const LOGOUT = 'LOGOUT'
+/*
+    use type.js >> to prevent mistyping and maintain
+*/
+export const REGISTER_USER = "REGISTER_USER";
+
+export const LOGIN = 'LOGIN';
+export const LOGOUT = 'LOGOUT';

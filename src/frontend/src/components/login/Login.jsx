@@ -5,34 +5,34 @@ import { Link } from 'react-router-dom';
 
 const LoginPage = (props) => {
     return(
-        <div class="wrap">
-                <div class="login">
+        <div className="wrap">
+                <div className="login">
                     <h2>[{props.login}] FootBallers</h2>
-                    <div class="login_sns">
-                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                    <div className="login_sns">
+                        <li><a href=""><i className="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i className="fab fa-facebook-f"></i></a></li>
+                        <li><a href=""><i className="fab fa-twitter"></i></a></li>
                     </div>
-                    <div class="login_id">
+                    <div className="login_id">
                         <h4>E-mail</h4>
                         <input type="email" name="" id="" placeholder="email" maxlength="30"/>
                     </div>
-                    <div class="login_pw">
+                    <div className="login_pw">
                         <h4>Password</h4>
                         <input type="password" name="" id="" placeholder="Password" maxlength="30"/>
                     </div>
-                    <div class="login_etc">
-                        <div class="checkbox">
+                    <div className="login_etc">
+                        <div className="checkbox">
                             <input type="checkbox" name="" id="" /> Remember Me?
                         </div>
-                        <div class="forgot_pw">
+                        <div className="forgot_pw">
                             <a href="">Forgot Password?</a>
                         </div>
                     </div>
-                    <div class="submit">
+                    <div className="submit">
                         <input type="submit" value="Login" />
                     </div>
-                    <div class="regist">
+                    <div className="regist">
                         <button><Link to="/RegisterPage">Sign-in</Link></button>
                     </div>
                 </div>

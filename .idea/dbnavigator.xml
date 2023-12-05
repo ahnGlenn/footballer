@@ -2,7 +2,7 @@
 <project version="4">
   <component name="DBNavigator.Project.DataEditorManager">
     <record-view-column-sorting-type value="BY_INDEX" />
-    <value-preview-text-wrapping value="true" />
+    <value-preview-text-wrapping value="false" />
     <value-preview-pinned value="false" />
   </component>
   <component name="DBNavigator.Project.DatabaseBrowserManager">
@@ -13,7 +13,22 @@
   </component>
   <component name="DBNavigator.Project.DatabaseConsoleManager">
     <connection id="c4c6c0b0-be24-4d40-9ae9-816bcb2c9738">
-      <console name="footballers개발" type="STANDARD" schema="" session="Main" />
+      <console name="footballers개발" type="STANDARD" schema="teamProject" session="Main"><![CDATA[-- create user table
+create table  fb_user(
+ email varchar(400) not null primary key,
+ password varchar(400) not null,
+ name varchar(400) not null,
+ phone varchar(400),
+ regist_dt DATETIME,
+ update_dt DATETIME
+);
+
+drop table fb_user;
+commit;
+
+SELECT VERSION();
+
+select * from fb_user;]]></console>
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseEditorStateManager">
@@ -21,6 +36,17 @@
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
+  </component>
+  <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="c4c6c0b0-be24-4d40-9ae9-816bcb2c9738" dataset="teamProject.fb_user" active-filter-id="EMPTY_FILTER" />
+    <filter-actions connection-id="c4c6c0b0-be24-4d40-9ae9-816bcb2c9738" dataset="teamProject.rsb_user" active-filter-id="EMPTY_FILTER">
+      <filter id="a0b43f29-8efd-4cc1-8876-76c90d515ae2" name="Filter 1" temporary="false" custom-name="false" type="basic" join-type="AND">
+        <condition column="no" operator="=" value="" active="true" />
+      </filter>
+    </filter-actions>
+  </component>
+  <component name="DBNavigator.Project.ExecutionManager">
+    <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.ObjectQuickFilterManager">
     <last-used-operator value="EQUAL" />
@@ -518,5 +544,9 @@
         </visibility-settings>
       </environment>
     </general-settings>
+  </component>
+  <component name="DBNavigator.Project.StatementExecutionManager">
+    <execution-variables />
+    <execution-variable-types />
   </component>
 </project>

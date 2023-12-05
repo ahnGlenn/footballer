@@ -3,12 +3,14 @@ import { useDispatch } from 'react-redux'
 import "./Login.css";
 
 function RegisterPage(props) {
-  const [Email, setEmail] = useState("");
-  const [Password, setPassword] = useState("");
-  const [Name, setName] = useState("");
-  const [ConfirmPasword, setConfirmPasword] = useState("");
 
-  // 디스패치 호출
+  // variables management
+  const [Email, setEmail] = useState("");
+  const [Name, setName] = useState("");
+  const [Password, setPassword] = useState("");
+  const [ConfirmPwd, setConfirmPwdd] = useState("");
+
+  // call dispatch :
   const dispatch = useDispatch();
 
   const onEmailHandler = (e) => {
@@ -24,53 +26,61 @@ function RegisterPage(props) {
   };
 
   const onConfirmPasswordHandler = (e) => {
-    setConfirmPasword(e.currentTarget.value);
+    setConfirmPwdd(e.currentTarget.value);
   };
 
+//  const handleChange = (e) => {
+//    const { name, value } = e.target;
+//    if (name === "email") setEmail(value);
+//    else if (name === "name") setName(value);
+//    else if (name === "password") setPassword(value);
+//    else if (name === "confirmPassword") setConfirmPassword(value);
+//  };
+
   const onSubmitHandler = (e) => {
-    e.preventDefault();
-//    if (Password === ConfirmPasword) {
-//      let body = {
-//        email: Email,
-//        name: Name,
-//        password: Password,
-//      };
-//      dispatch(registerUser(body)).then((res) => {
-//        alert("가입이 정상적으로 완료되었습니다");
-//        props.history.push("/login");
-//      });
-//    } else {
-//      alert("비밀번호가 일치하지 않습니다");
-//    }
+    e.preventDefault(); // button이 submit을 연속으로(계속)할경우 리프레시 현상 방지용.
+    alert("제출"); console.log("[비밀번호 그대로 노출]\n제출합니다 \n", "email = ", Email, "\n pwd = ", Password );
+
+    if (Password === ConfirmPwd) {
+      let body = {
+        email: Email,
+        name: Name,
+        password: Password,
+      };
+      dispatch(registerUser(body)).then((res) => {
+        alert("가입이 정상적으로 완료되었습니다");
+        props.history.push("/login");
+      });
+    } else {
+      alert("비밀번호가 일치하지 않습니다");
+    }
   };
 
     return (
         <div>
           <form onSubmit={onSubmitHandler}>
-            <div class="wrap">
-                <div class="login">
+            <div className="wrap">
+                <div className="login">
                     <h2>Sign-in</h2>
-                    <div class="login_id">
+                    <div className="email">
                         <label>Email</label>
                         <input type="email" value={Email} onChange={onEmailHandler} />
                     </div>
-                    <div class="login_id">
+                    <div className="nm">
                         <label>Name</label>
-                        <input type="test" value={Name} onChange={onNameHandler} />
+                        <input type="text" value={Name} onChange={onNameHandler} />
                     </div>
-                    <div class="login_pw">
+                    <div className="pw">
                         <label>Password</label>
                         <input type="password" value={Password} onChange={onPasswordHanlder} />
                     </div>
-                    <div class="login_pw">
+                    <div className="pw_re">
                         <label>ConfirmPasword</label>
-                        <input type="password" value={ConfirmPasword} onChange={onConfirmPasswordHandler} />
+                        <input type="password" value={ConfirmPwd} onChange={onConfirmPasswordHandler} />
                     </div>
                     <br />
-                    <div class="regist">
-                        <button type="submit">
-                            sign-in
-                        </button>
+                    <div className="regist">
+                        <button type="submit">sign-in</button>
                     </div>
                 </div>
             </div>

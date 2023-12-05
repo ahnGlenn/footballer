@@ -14,6 +14,7 @@ function App() {
                     <Routes>
                         <Route exact path="/" element={<LoginPage />} />
                         <Route path="/registerPage" element={<RegisterPage />} />
+                        <Route path="/mainPage" element={<RegisterPage />} />
                     </Routes>
                 </Router>
             </div>

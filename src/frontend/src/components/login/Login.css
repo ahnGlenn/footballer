@@ -60,12 +60,14 @@ h2 {
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4), -3px -3px 5px rgba(0, 0, 0, 0.1);
 }
 
-.login_id {
+.email,
+.nm {
   margin-top: 20px;
   width: 80%;
 }
 
-.login_id input {
+.email input,
+.nm input{
   width: 100%;
   height: 50px;
   border-radius: 30px;
@@ -75,12 +77,14 @@ h2 {
   outline: none;
 }
 
-.login_pw {
+.pw,
+.pw_re {
   margin-top: 20px;
   width: 80%;
 }
 
-.login_pw input {
+.pw input,
+.pw_re input{
   width: 100%;
   height: 50px;
   border-radius: 30px;
