@@ -1,20 +1,28 @@
-import {LOGIN, LOGOUT} from './types'
+import * as actionTypes from './types';
 import axios from 'axios';
 
-export function loginUser(dataToSubmit){
-    const req = axios.post('/login', dataToSubmit){}
-}
+export const loginRequest = (email, password) => {
 
-// Login
-export const logIn = () =>{
-    return{
-        type: LOGIN
-    }
-}
+    return async (dispatch) => {
+        dispatch({ type: actionTypes.LOGIN_REQUEST });
 
-// Logout
-export const logOut = () =>{
-    return{
-        type: LOGOUT
-    }
-}
+        try {
+            const response = await axios.post('/api/login', { email, password });
+
+            // dispatch({
+
+            //     type: actionTypes.LOGIN_SUCCESS,
+            //     payload: response.data, // Assuming the server sends back user data upon successful login
+            // });
+        } catch (error) {
+            dispatch({
+                type: actionTypes.LOGIN_FAILURE,
+                payload: error.response ? error.response.data : 'An error occurred',
+            });
+        }
+    };
+};
+
+export const logout = () => ({
+    type: actionTypes.LOGOUT,
+});

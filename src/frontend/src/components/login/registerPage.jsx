@@ -8,7 +8,7 @@ function RegisterPage(props) {
   const [Email, setEmail] = useState("");
   const [Name, setName] = useState("");
   const [Password, setPassword] = useState("");
-  const [ConfirmPwd, setConfirmPwdd] = useState("");
+  const [ConfirmPwd, setConfirmPwd] = useState("");
 
   // call dispatch :
   const dispatch = useDispatch();
@@ -26,7 +26,7 @@ function RegisterPage(props) {
   };
 
   const onConfirmPasswordHandler = (e) => {
-    setConfirmPwdd(e.currentTarget.value);
+    setConfirmPwd(e.currentTarget.value);
   };
 
 //  const handleChange = (e) => {
@@ -41,19 +41,19 @@ function RegisterPage(props) {
     e.preventDefault(); // button이 submit을 연속으로(계속)할경우 리프레시 현상 방지용.
     alert("제출"); console.log("[비밀번호 그대로 노출]\n제출합니다 \n", "email = ", Email, "\n pwd = ", Password );
 
-    if (Password === ConfirmPwd) {
-      let body = {
-        email: Email,
-        name: Name,
-        password: Password,
-      };
-      dispatch(registerUser(body)).then((res) => {
-        alert("가입이 정상적으로 완료되었습니다");
-        props.history.push("/login");
-      });
-    } else {
-      alert("비밀번호가 일치하지 않습니다");
-    }
+    // if (Password === ConfirmPwd) {
+    //   let body = {
+    //     email: Email,
+    //     name: Name,
+    //     password: Password,
+    //   };
+    //   dispatch(registerUser(body)).then((res) => {
+    //     alert("가입이 정상적으로 완료되었습니다");
+    //     props.history.push("/login");
+    //   });
+    // } else {
+    //   alert("비밀번호가 일치하지 않습니다");
+    // }
   };
 
     return (

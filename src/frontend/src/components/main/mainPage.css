@@ -1,0 +1,67 @@
+.main-page {
+    color: #333; /* 원하는 글자 색상으로 변경 */
+    padding: 20px; /* 내용 주변에 여백을 추가할 수 있습니다. */
+}
+body {
+    margin: 0; /* 기본 margin 제거 */
+    padding: 0; /* 기본 padding 제거 */
+    box-sizing: border-box; /* box-sizing을 border-box로 설정하여 padding과 border가 요소의 크기에 영향을 주지 않도록 함 */
+    /*background: linear-gradient(124.26deg, #ccf7c5 36.67%, #539c7d 99.61%);*/
+    /*background: linear-gradient(-100.00deg, #97ec8b -50.67%, #1ffa88 99.61%);*/
+    color: #333; /* 글자 색상 변경 */
+}
+
+/*
+#root {
+    height: 100vh; !* 화면 높이의 100%로 설정하여 페이지를 꽉 채움 *!
+}
+*/
+
+
+
+@font-face {
+    font-family: "Bitgoeul_Bold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_seven@1.2/Bitgoeul_Bold.woff")
+    format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background: linear-gradient(124.26deg, #ccf7c5 36.67%, #539c7d 99.61%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bitgoeul_Bold";
+    min-height: 100vh;
+    margin: 0px;
+}
+
+/* Home */
+.mainPage {
+    display: grid;
+}
+.mainPage .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainPage .top .top_left_content {
+    padding-bottom: 200px;
+    padding-right: 300px;
+}
+
+.Home .top .top_right_content {
+    color: white;
+    font-size: 35px;
+    line-height: 100%;
+}
+
+.Home .top .top_right_content hr {
+    height: 5px;
+    background-color: white;
+    border: 0px;
+}
+.Home .top .top_right_content h5 {
+    margin-top: 10px;
+}
