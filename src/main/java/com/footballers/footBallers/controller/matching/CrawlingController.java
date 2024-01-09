@@ -27,10 +27,16 @@ import java.util.List;
 @RequestMapping("/crawling")
 public class CrawlingController {
     private WebDriver driver; // %26queryTop=
-    private static final String url = "https://cafe.naver.com/haha999?iframe_url=/ArticleList.nhn%3Fsearch.clubid=11367414%26search.menuid=948%26search.boardtype=L";
+    // private static final String url = "https://cafe.naver.com/haha999?iframe_url=/ArticleList.nhn%3Fsearch.clubid=11367414%26search.menuid=948%26search.boardtype=L";
 
     // 용병 신청 페이지
-    private static final String aplcnt_url = "https://cafe.naver.com/ArticleSearchList.nhn?search.clubid=11367414&search.searchdate=all&search.searchBy=0&search.query=%B1%A4%B8%ED&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid=790";
+    // private static final String apl_url = "https://cafe.naver.com/ArticleSearchList.nhn?search.clubid=11367414&search.searchdate=all&search.searchBy=0&search.query=%B1%A4%B8%ED&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid=790";
+
+    // 축매칭 공고(광명)
+    private static final String invite11_url = "https://cafe.naver.com/ArticleSearchList.nhn?search.clubid=11367414&search.searchdate=1w&search.searchBy=1&search.query=%B1%A4%B8%ED&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid=648";
+
+
+
     @GetMapping("/match")
     public List<String> test() throws IOException, InterruptedException {
 
@@ -40,7 +46,12 @@ public class CrawlingController {
         // Chrome 브라우저를 열기
         driver = new ChromeDriver();
 
+        // 데이터 크롤링
         getDataList();
+        // getInviteList();
+
+        // Close
+        driver.quit();
 
         return Arrays.asList("안녕하세요", "Hello");
 
@@ -49,24 +60,25 @@ public class CrawlingController {
     private List<String> getDataList() throws InterruptedException {
         List<String> list = new ArrayList<>();
 
-        driver.get(url);
+        driver.get(invite11_url);
 
-        // if it's in Iframe, Declaration is a must.
+        // If it's in Iframe, Declaration is a must.
         driver.switchTo().frame("cafe_main");
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 
         // Wait until its(page) fully loaded.
         wait.until(webDriver -> ((JavascriptExecutor) webDriver).executeScript("return document.readyState").equals("complete"));
-        //WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='main-area']/div[4]/table/tbody/tr[1]/td[1]/div[2]/div/a")));
 
-        List<WebElement> elementList = driver.findElements(By.xpath("//*[@id='main-area']/div[4]/table/tbody/tr[1]/td[1]/div[2]/div/a"));
-
-        for (WebElement element : elementList) {
-            System.out.println("[list text] : " + element.getText());
+        // Retrieve all matches
+        List<WebElement> trElements = driver.findElements(By.xpath("//*[@id='main-area']/div[5]/table/tbody/tr"));
+        for (WebElement trElement : trElements) {
+            WebElement targetElement = trElement.findElement(By.xpath("./td[1]/div[2]/div/a"));
+            String text = targetElement.getText();
+            System.out.println("list print : " + targetElement.getText());
         }
 
-        // escape from 'Iframe' and then go back to the Original states.
+        // Escape from 'Iframe' and then go back to the Original states.
         driver.switchTo().defaultContent();
 
         return list;
