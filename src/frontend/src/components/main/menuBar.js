@@ -1,5 +1,6 @@
-import { AiOutlineHome, AiOutlineFolder } from "react-icons/ai";
+/**/
 import { BsPerson, BsTelephone } from "react-icons/bs";
+import { AiOutlineHome, AiOutlineSearch, AiOutlineSchedule } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
 import  "./menuBar.css"
@@ -17,20 +18,20 @@ const MenuBar = () => {
                         navigate("/mainPage");
                     }}
                 />
-                <BsPerson
+                <AiOutlineSearch
                     className="icon"
-                    id="me"
+                    id="matching"
                     data-tooltip-content="About Me"
                     onClick={() => {
-                        navigate("/me");
+                        navigate("/MatchingPage");
                     }}
                 />
-                <AiOutlineFolder
+                <AiOutlineSchedule
                     className="icon"
                     id="project"
                     data-tooltip-content="Project"
                     onClick={() => {
-                        navigate("/project");
+                        navigate("/SchedulePage");
                     }}
                 />
                 <BsTelephone

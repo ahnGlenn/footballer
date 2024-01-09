@@ -4,66 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47828530-7ea4-47ea-bfd7-fc3fb4ef273a" name="Changes" comment="로그인 - 로그인화면/회원가입 화면 생성(링크이동 작업)">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/footBallers_main_Web_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules/footBallers.test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/dto/loginDto.java" afterDir="false" />
+    <list default="true" id="47828530-7ea4-47ea-bfd7-fc3fb4ef273a" name="Changes" comment="메뉴바 및 css/publish 작업 진행중">
+      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/MatchingPage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/schedulePage.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/CrawlingController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/md5-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/footballers/footBallers/controller/FootBallersApplication.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/com/footballers/footBallers/controller/loginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/test/com/footballers/footBallers/FootBallersApplicationTests.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/footBallers-0.0.1-SNAPSHOT-plain.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/libs/footBallers-0.0.1-SNAPSHOT.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/com.footballers.footBallers.FootBallersApplicationTests.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/base-style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/css/style.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/js/report.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/com.footballers.footBallers.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resolvedMainClassName" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/resources/main/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/TEST-com.footballers.footBallers.FootBallersApplicationTests.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/output.bin.idx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/test-results/test/binary/results.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/bootJar/MANIFEST.MF" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/compileTransaction/stash-dir/loginController.class.uniqueId0" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileTestJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/jar/MANIFEST.MF" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/login/Login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/login/registerPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/login/registerPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/redux/login/actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/redux/login/actions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/redux/login/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/redux/login/reducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/redux/login/types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/redux/login/types.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/redux/store.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/FootBallersApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/FootBallersApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/loginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/loginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/login/Login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/login/loginPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,9 +48,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -140,11 +95,11 @@
                 <list>
                   <RecentBranch>
                     <option name="branchName" value="branch_footBallers1" />
-                    <option name="lastUsedInstant" value="1698168169" />
+                    <option name="lastUsedInstant" value="1702397123" />
                   </RecentBranch>
                   <RecentBranch>
                     <option name="branchName" value="main" />
-                    <option name="lastUsedInstant" value="1698167862" />
+                    <option name="lastUsedInstant" value="1702397097" />
                   </RecentBranch>
                 </list>
               </option>
@@ -167,39 +122,43 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.16920471",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;branch__footBallers1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ansangjae/IdeaProjects/footballers/src/frontend/src/components/main&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16920471&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/frontend/src/components/main" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/frontend/src/components/login" />
       <recent name="$PROJECT_DIR$/src/frontend/src/redux" />
@@ -362,10 +321,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.footballers [clean]" />
-        <item itemvalue="Gradle.footballers [cleanQuerydslSourcesDir]" />
-        <item itemvalue="Gradle.footballers [classes]" />
         <item itemvalue="Gradle.footballers [compileJava]" />
+        <item itemvalue="Gradle.footballers [cleanQuerydslSourcesDir]" />
+        <item itemvalue="Gradle.footballers [clean]" />
+        <item itemvalue="Gradle.footballers [classes]" />
         <item itemvalue="Gradle.footballers [build]" />
       </list>
     </recent_temporary>
@@ -387,6 +346,13 @@
       <workItem from="1702105745779" duration="10426000" />
       <workItem from="1702190048125" duration="15211000" />
       <workItem from="1702390349392" duration="5978000" />
+      <workItem from="1702632305818" duration="1423000" />
+      <workItem from="1702636346381" duration="11085000" />
+      <workItem from="1703482713716" duration="6620000" />
+      <workItem from="1703937460149" duration="19411000" />
+      <workItem from="1704632206231" duration="1204000" />
+      <workItem from="1704724620856" duration="1655000" />
+      <workItem from="1704803520474" duration="696000" />
     </task>
     <task id="LOCAL-00001" summary="delete readme.md">
       <created>1692089552345</created>
@@ -475,6 +441,22 @@
     <MESSAGE value="추가 및 작업" />
     <MESSAGE value="로그인 - 로그인화면/회원가입 화면 생성(링크이동 작업)" />
     <option name="LAST_COMMIT_MESSAGE" value="로그인 - 로그인화면/회원가입 화면 생성(링크이동 작업)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/CrawlingController.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/CrawlingController.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/footBallers$footBallers__build_.ic" NAME="footBallers [build] Coverage Results" MODIFIED="1701707873530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
