@@ -8,13 +8,16 @@ function MainPage() {
       <div className="mainPage">
         <div className="top">
             <div className="top_left_content">
-                사진 영역???
+                <video className="myFace" width='500' height='500' muted autoPlay loop>
+                    <source src={require("./memoji.mp4")} type="video/mp4"/>
+                </video>
             </div>
             <div className="top_right_content">
-                <h1>Hello!</h1>
-                <h1>this is Footballers</h1>
+                <h1>Hello world! this is Glenn's playground</h1>
+                <br />
                 <hr />
-                <h5>Wellcome!!</h5>
+                <br />
+                <h1>this is Footballers. Wellcome!</h1>
             </div>
         </div>
         <div className="bottom">

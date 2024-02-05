@@ -47,8 +47,10 @@ body {
     align-items: center;
 }
 .mainPage .top .top_left_content {
-    padding-bottom: 200px;
-    padding-right: 300px;
+    margin-bottom: 5%;
+}
+.mainPage .top .top_right_content {
+    margin-bottom: 5%;
 }
 
 .Home .top .top_right_content {
