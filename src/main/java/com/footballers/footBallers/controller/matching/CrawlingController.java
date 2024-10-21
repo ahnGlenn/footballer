@@ -15,27 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.time.Duration;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
-import java.util.Map;
 
 @CrossOrigin(origins = "http://localhost:3000")
 @RestController
 @RequestMapping("/crawling")
 public class CrawlingController {
     private WebDriver driver;
-    // private static final String url = "https://cafe.naver.com/haha999?iframe_url=/ArticleList.nhn%3Fsearch.clubid=11367414%26search.menuid=948%26search.boardtype=L";
-
-    // 용병 신청 페이지
-    // private static final String apl_url = "https://cafe.naver.com/ArticleSearchList.nhn?search.clubid=11367414&search.searchdate=all&search.searchBy=0&search.query=%B1%A4%B8%ED&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid=790";
-
-
     // 축매칭 공고(광명)
-    private static final String invite11_url = "https://cafe.naver.com/ArticleSearchList.nhn?search.clubid=11367414&search.searchdate=1w&search.searchBy=1&search.query=%B1%A4%B8%ED&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid=648";
-    private static final String invite111_url = "https://cafe.naver.com/haha999?iframe_url=/ArticleSearchList.nhn%3Fsearch.clubid=11367414%26search.searchdate=1w%26search.searchBy=1%26search.query=%B1%A4%B8%ED%26search.defaultValue=1%26search.includeAll=%26search.exclude=%26search.include=%26search.exact=%26search.sortBy=date%26userDisplay=15%26search.media=0%26search.option=0%26search.menuid=648";
     private static final String invite112_url = "https://cafe.naver.com/ArticleSearchList.nhn?search.clubid=11367414&search.searchdate=6m&search.searchBy=1&search.query=%B1%A4%B8%ED&search.defaultValue=1&search.includeAll=&search.exclude=&search.include=&search.exact=&search.sortBy=date&userDisplay=15&search.media=0&search.option=0&search.menuid=648";
-
-
 
     @GetMapping("/match")
     public List<String> test() throws Exception {
@@ -48,32 +36,10 @@ public class CrawlingController {
         chromeOptions.setCapability("networkConnectionEnabled", false);
 
         // Chrome 브라우저를 열기
-        // driver = new ChromeDriver(chromeOptions);
+        driver = new ChromeDriver(chromeOptions);
 
         return getDataList();
 
-    }
-
-    private void loginNaver() throws Exception{
-        try {
-
-            // 웹사이트에 접속
-            driver.get("https://nid.naver.com/nidlogin.login");
-
-            // 로그인 정보 입력
-            WebElement usernameField = driver.findElement(By.id("id"));
-            WebElement passwordField = driver.findElement(By.id("pw"));
-
-            usernameField.sendKeys("dkstkdwo93");
-            passwordField.sendKeys("1043godwjd3!");
-
-            // 로그인 버튼 클릭
-            WebElement loginButton = driver.findElement(By.id("log.login"));
-            loginButton.click();
-
-        }catch (Exception e){
-            e.getStackTrace();
-        }
     }
 
     private List<String> getDataList() throws Exception {
@@ -107,23 +73,39 @@ public class CrawlingController {
             // Escape from 'Iframe' and then go back to the Original states.
             driver.switchTo().defaultContent();
         }
-
         catch(Exception e){
             e.getStackTrace();
         }
-
         finally {
             // Close
             driver.quit();
         }
 
-
         return matchList;
     }
 
 
+    private void loginNaver() throws Exception{
+        try {
 
+            // 웹사이트에 접속
+            driver.get("https://nid.naver.com/nidlogin.login");
 
+            // 로그인 정보 입력
+            WebElement usernameField = driver.findElement(By.id("id"));
+            WebElement passwordField = driver.findElement(By.id("pw"));
 
+            usernameField.sendKeys("dkstkdwo93");
+            passwordField.sendKeys("");
+
+            // 로그인 버튼 클릭
+            WebElement loginButton = driver.findElement(By.id("log.login"));
+            loginButton.click();
+
+        }catch (Exception e){
+            e.getStackTrace();
+        }
+    }
 
 }
+

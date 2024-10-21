@@ -21,6 +21,18 @@
     border-radius: 20px;
 }
 
+.Menubar .backgrondMenu2 {
+    margin-left: -52%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 40px;
+    height: 80px;
+    background-color: rgba(14, 14, 14, 0.6);
+    border: 1px solid #b3b3b3;
+    border-radius: 20px;
+}
+
 .Menubar .icon {
     font-size: 60px;
     color: #25402d;

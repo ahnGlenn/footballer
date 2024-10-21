@@ -1,5 +1,5 @@
-/**/
-import { BsPerson, BsTelephone } from "react-icons/bs";
+import { BsTelephone } from "react-icons/bs";
+import { FaPowerOff } from "react-icons/fa6";
 import { AiOutlineHome, AiOutlineSearch, AiOutlineSchedule } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 
@@ -42,11 +42,16 @@ const MenuBar = () => {
                         navigate("/contact");
                     }}
                 />
-
-                {/*<ReactTooltip anchorId="home" />
-                <ReactTooltip anchorId="me" />
-                <ReactTooltip anchorId="project" />
-                <ReactTooltip anchorId="contact" />*/}
+            </div>
+            <div className="backgrondMenu2">
+                <FaPowerOff
+                    className="icon"
+                    id="contact"
+                    data-tooltip-content="Contact"
+                    onClick={() => {
+                        navigate("/loginPage");
+                    }}
+                />
             </div>
         </div>
     );

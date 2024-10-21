@@ -23,11 +23,14 @@ function MatchingPage() {
     // -------------
     const fn_smsShare = () =>{
 
-        var recipientNumber = "010-7338-7045";
-        var msg = templateRef.current.innerHTML.replaceAll('<br>', '\n');
+        if(window.confirm("are you sure??")){
+            var recipientNumber = "010-7338-7045";
+            var msg = templateRef.current.innerHTML.replaceAll('<br>', '\n');
 
-        // eslint-disable-next-line no-restricted-globals
-        location.href = 'sms:'+recipientNumber+'?body='+msg.replace(/(\n|n|rn)/g,"%0a");
+            // eslint-disable-next-line no-restricted-globals
+            location.href = 'sms:'+recipientNumber+'?body='+msg.replace(/(\n|n|rn)/g,"%0a");
+        }
+
     }
 
 
@@ -35,27 +38,41 @@ function MatchingPage() {
         <div className="matchingPage">
             <div className="top">
                 <div className="top_left_content">
-                    <table>
-                        <tr>
-                            <th>no. </th>
-                            <th>title</th>
-                            <th>msg</th>
-                        </tr>
-                        <tr>
-                            <td>1</td>
-                            <td>광명</td>
-                            <td><button>click</button></td>
-                        </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>철산동</td>
-                            <td><button>click</button></td>
-                        </tr>
-                        <tr>
-                            <td>3</td>
-                            <td>일직동</td>
-                            <td><a onClick={fn_smsShare}>문자 전송</a></td>
-                        </tr>
+                    <table className="matchTable">
+                        <colgroup>
+                            <col style={{ width: '5%' }}/>
+                            <col style={{ width: 'auto' }}/>
+                            <col style={{ width: '20%' }}/>
+                            <col style={{ width: '15%' }}/>
+                            <col style={{ width: '10%' }}/>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">NO</th>
+                                <th scope="col">TITLE</th>
+                                <th scope="col">PHONE</th>
+                                <th scope="col">DATE</th>
+                                <th scope="col">Message</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {/*<tr>
+                                <td>1</td>
+                                <td>철산로 55,1123동 123호</td>
+                                <td>010-7338-7045</td>
+                                <td>2024.01.01</td>
+                                <td><a onClick={fn_smsShare}>SEND</a></td>
+                            </tr>*/}
+                            {matchList.map((item, index) => (
+                                <tr>
+                                    <td>{index + 1}</td>
+                                    <td>{item}</td>
+                                    <td>010-7338-7045</td>
+                                    <td>2024.02.28</td>
+                                    <td><a onClick={fn_smsShare}>SEND</a></td>
+                                </tr>
+                            ))}
+                        </tbody>
                     </table>
                     {/*<table>
                     <colgroup></colgroup>
@@ -89,7 +106,6 @@ function MatchingPage() {
                             <br />
                             게시글 보고 연락드립니다. 메시지 부탁드리겠습니다. <br />
                        </div>
-                       <div className="sendBtn">send</div>
                    </div>
                 </div>
             </div>

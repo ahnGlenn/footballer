@@ -8,7 +8,7 @@ function MainPage() {
       <div className="mainPage">
         <div className="top">
             <div className="top_left_content">
-                <video className="myFace" width='500' height='500' muted autoPlay loop>
+                <video className="myFace" width='100%' height='500' muted autoPlay loop>
                     <source src={require("./memoji.mp4")} type="video/mp4"/>
                 </video>
             </div>
@@ -17,7 +17,7 @@ function MainPage() {
                 <br />
                 <hr />
                 <br />
-                <h1>this is Footballers. Wellcome!</h1>
+                <h1>Wellcome!</h1>
             </div>
         </div>
         <div className="bottom">

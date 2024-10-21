@@ -4,23 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="47828530-7ea4-47ea-bfd7-fc3fb4ef273a" name="Changes" comment="축구 초청 매칭 크롤링">
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/MatchingPage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/frontend/src/components/main/memoji.mp4" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/dto/MatchDto.java" afterDir="false" />
+    <list default="true" id="47828530-7ea4-47ea-bfd7-fc3fb4ef273a" name="Changes" comment="mainPage(home) css 수정">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/bubbleSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/dfs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/quickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.2.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/file-system.probe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/MatchingPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/MatchingPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/MatchingPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/MatchingPage.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/frontend/src/components/main/menuBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/CrawlingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/CrawlingController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,39 +124,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
-    "last_opened_file_path": "/Users/ansangjae/IdeaProjects/footballers/src/frontend/src/files",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.16920471",
-    "settings.editor.selected.configurable": "advanced.settings",
-    "ts.external.directory.path": "/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;branch__footBallers1&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ansangjae/IdeaProjects/footballers&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.16920471&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/Applications/IntelliJ IDEA.app/Contents/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/frontend/src/files" />
@@ -177,10 +173,11 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.footballers.footBallers.controller.matching" />
       <recent name="com.footballers.footBallers.domain" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.mainPage.jsx">
+  <component name="RunManager" selected="Spring Boot.FootBallersApplication">
     <configuration name="FootBallersApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.footballers.footBallers.controller.FootBallersApplication" />
       <module name="footBallers.main" />
@@ -188,49 +185,57 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="footballers [cleanQuerydslSourcesDir]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="cleanQuerydslSourcesDir" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration name="bubbleSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.footballers.footBallers.controller.matching.bubbleSort" />
+      <module name="footBallers.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footballers.footBallers.controller.matching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
-    <configuration name="footballers [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
+    <configuration name="dfs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.footballers.footBallers.controller.matching.dfs" />
+      <module name="footBallers.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footballers.footBallers.controller.matching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="quickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.footballers.footBallers.controller.matching.quickSort" />
+      <module name="footBallers.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footballers.footBallers.controller.matching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.footballers.footBallers.controller.matching.test" />
+      <module name="footBallers.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.footballers.footBallers.controller.matching.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="footballers [compileQuerydsl]" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
@@ -254,50 +259,6 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
-    <configuration name="footballers [querydslClasses]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="querydslClasses" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
-    <configuration name="footballers [resolveMainClassName]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="resolveMainClassName" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <RunAsTest>false</RunAsTest>
-      <method v="2" />
-    </configuration>
     <configuration name="mainPage.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/frontend/src/components/main/mainPage.jsx" working-dir="$PROJECT_DIR$/src/frontend/src/components/main">
       <method v="2" />
     </configuration>
@@ -311,10 +272,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.mainPage.jsx" />
-        <item itemvalue="Gradle.footballers [querydslClasses]" />
-        <item itemvalue="Gradle.footballers [resolveMainClassName]" />
-        <item itemvalue="Gradle.footballers [clean]" />
-        <item itemvalue="Gradle.footballers [cleanQuerydslSourcesDir]" />
+        <item itemvalue="Application.test" />
+        <item itemvalue="Application.quickSort" />
+        <item itemvalue="Application.dfs" />
+        <item itemvalue="Application.bubbleSort" />
       </list>
     </recent_temporary>
   </component>
@@ -349,6 +310,31 @@
       <workItem from="1706535546894" duration="5983000" />
       <workItem from="1706934729708" duration="11976000" />
       <workItem from="1707142497577" duration="3347000" />
+      <workItem from="1707483080613" duration="6286000" />
+      <workItem from="1707838459815" duration="5887000" />
+      <workItem from="1709967979251" duration="12467000" />
+      <workItem from="1710328684121" duration="347000" />
+      <workItem from="1710329034324" duration="14886000" />
+      <workItem from="1711454155491" duration="2276000" />
+      <workItem from="1713679606477" duration="793000" />
+      <workItem from="1714567989321" duration="3902000" />
+      <workItem from="1714572121574" duration="298000" />
+      <workItem from="1714572702626" duration="1724000" />
+      <workItem from="1714574979450" duration="18000" />
+      <workItem from="1714968233836" duration="346000" />
+      <workItem from="1714968594015" duration="897000" />
+      <workItem from="1714969518630" duration="64000" />
+      <workItem from="1715006005775" duration="998000" />
+      <workItem from="1715007020907" duration="1783000" />
+      <workItem from="1715010513702" duration="375000" />
+      <workItem from="1715430823683" duration="952000" />
+      <workItem from="1715520859133" duration="3882000" />
+      <workItem from="1715954962581" duration="675000" />
+      <workItem from="1717943988467" duration="804000" />
+      <workItem from="1719415511644" duration="523000" />
+      <workItem from="1719494275905" duration="49000" />
+      <workItem from="1719553036920" duration="674000" />
+      <workItem from="1729509160323" duration="248000" />
     </task>
     <task id="LOCAL-00001" summary="delete readme.md">
       <created>1692089552345</created>
@@ -413,6 +399,16 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="javascript:npm:react" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.persistence:jakarta.persistence-api" />
+    <option featureType="dependencySupport" implementationName="java:org.seleniumhq.selenium:selenium-java" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -424,7 +420,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="branch_footBallers1" />
+                        <option value="main" />
                       </list>
                     </value>
                   </entry>
@@ -449,11 +445,44 @@
     <option name="LAST_COMMIT_MESSAGE" value="축구 초청 매칭 크롤링" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/quickSort.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/quickSort.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/quickSort.java</url>
+          <line>9</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/controller/matching/quickSort.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/footballers/footBallers/dto/loginDto.java</url>
+          <line>13</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="SpringBootApplicationConfigurationType">
         <watch expression="chromeOptions" />
       </configuration>
     </watches-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/footBallers$footBallers__build_.ic" NAME="footBallers [build] Coverage Results" MODIFIED="1701707873530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
