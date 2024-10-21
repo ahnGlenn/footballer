@@ -10,7 +10,8 @@
 <br/>
 
 # 2. 아키텍처
-이미지 예정
+![image](https://github.com/user-attachments/assets/72ae83f0-e2f9-4c1a-9995-d704e234763c)
+
 
 <br/>
 
